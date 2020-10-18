@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Preparate din pui</title>
+    <link rel="stylesheet" type="text/css" href="Liste.css">
+    <link rel="stylesheet" type="text/css" href="Meniu.css">
+    <script src="order.js"></script>
+</head>
+<body >
+<div class="flex-container">
+    <span><a href="Home.html">Home</a></span>
+    <div class="dropdown">
+        <a class="drop">Meniu</a>
+        <div class="dropdown-content">
+            <a href="Pizza.html">Meniu mancare</a>
+            <a href="Alcoolice.html">Meniu bauturi</a>
+        </div>
+    </div>
+    <span><a href="Contact.html">Contact</a></span>
+    <div>
+        <img  alt="Cont" src="images/account.png" id="img1">
+        <img alt="Cont" src="images/account_hov.png" id="img1_hov">
+    </div>
+    <div>
+        <a href="Cos_cumparaturi.html">
+            <img alt="Cart" src="images/cart.png" id="img2">
+            <img alt="Cart" src="images/cart_hov.png" id="img2_hov">
+        </a>
+    </div>
+</div>
+<div class="meniu">
+    <div><a href="Pizza.html" >Pizza</a></div>
+    <div><a href="Paste.html">Paste</a></div>
+    <div><a href="Pui.html">Preparate din pui</a></div>
+    <div><a href="Burgers.html">Burgeri</a></div>
+    <div><a href="Garnituri.html">Garnituri</a></div>
+    <div><a href="Deserturi.html">Deserturi</a></div>
+</div>
+<div class="coloana">
+    <div class="menu-items" id="a">
+        <img alt="image/cordon.png" src="images/cordon.png" >
+        <div class="detalii">
+            <div class="denumire">Cordon Bleu</div>
+            <div class="ingrediente">piept de pui, sunca, cascaval toate pane</div>
+            <div class="pret">28</div>
+        </div>
+        <span><button class="add" onclick="addcart('a')">+</button></span>
+    </div>
+    <div class="menu-items" id="b">
+        <img alt="shanghai.jpg" src="images/shanghai.jpg">
+        <div class="detalii">
+            <div class="denumire">Pui shanghai</div>
+            <div class="ingrediente">batonete de pui pane cu susan</div>
+            <div class="pret">26</div>
+        </div>
+        <span><button class="add" onclick="addcart('b')">+</button></span>
+    </div>
+    <div class="menu-items" id="c">
+        <img alt="snitel_pui.jpeg" src="images/snitel_pui.jpeg">
+        <div class="detalii">
+            <div class="denumire">Snitel de pui</div>
+            <div class="ingrediente"></div>
+            <div class="pret">24</div>
+        </div>
+        <span><button class="add" onclick="addcart('c')">+</button></span>
+    </div>
+    <div class="menu-items" id="d">
+        <img alt="pui_gratar.jpg." src="images/pui_gratar.jpg">
+        <div class="detalii">
+            <div class="denumire">Piept de pui la gratar</div>
+            <div class="ingrediente"></div>
+            <div class="pret">24</div>
+        </div>
+        <span><button class="add" onclick="addcart('d')">+</button></span>
+    </div>
+</div>
+<div class="coloana">
+    <div class="menu-items" id="e">
+        <img alt="ficatei.jpg" src="images/ficatei.jpg">
+        <div class="detalii">
+            <div class="denumire">Ficatei de pui</div>
+            <div class="ingrediente">fiactei de pui, ciuperci, bacon, vin alb, ceapa</div>
+            <div class="pret">26</div>
+        </div>
+        <span><button class="add" onclick="addcart('e')">+</button></span>
+    </div>
+    <div class="menu-items" id="f">
+        <img alt="pui_ciuperci.jpg" src="images/pui_ciuperci.jpg">
+        <div class="detalii">
+            <div class="denumire">Piept de pui cu ciuperci si sos alb</div>
+            <div class="ingrediente">piept de pui, ciuperci, smantana, vin alb</div>
+            <div class="pret">30</div>
+        </div>
+        <span><button class="add" onclick="addcart('f')">+</button></span>
+    </div>
+    <div class="menu-items" id="g">
+        <img alt="pui_paprika.jpg" src="images/pui_paprika.jpg">
+        <div class="detalii">
+            <div class="denumire">Pui paprika</div>
+            <div class="ingrediente">piept pui, ciuperci, ardei iute, sos de rosii picant, smantana</div>
+            <div class="pret">30</div>
+        </div>
+        <span><button class="add" onclick="addcart('g')">+</button></span>
+    </div>
+    <div class="menu-items" id="h">
+        <img alt="frigarui_pui.jpg" src="images/frigarui_pui.jpg">
+        <div class="detalii">
+            <div class="denumire">Frigarui de pui</div>
+            <div class="ingrediente"></div>
+            <div class="pret">26</div>
+        </div>
+        <span><button class="add" onclick="addcart('h')">+</button></span>
+    </div>
+</div>
+</body>
+</html>

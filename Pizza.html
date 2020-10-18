@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza</title>
+    <link rel="stylesheet" type="text/css" href="Liste.css">
+    <link rel="stylesheet" type="text/css" href="Meniu.css">
+    <script src="order.js"></script>
+</head>
+<body >
+<div class="flex-container">
+    <span><a href="Home.html">Home</a></span>
+    <div class="dropdown">
+        <a class="drop">Meniu</a>
+        <div class="dropdown-content">
+            <a href="Pizza.html">Meniu mancare</a>
+            <a href="Alcoolice.html">Meniu bauturi</a>
+        </div>
+    </div>
+    <span><a href="Contact.html">Contact</a></span>
+    <div>
+        <img  alt="Cont" src="images/account.png" id="img1">
+        <img alt="Cont" src="images/account_hov.png" id="img1_hov">
+    </div>
+    <div>
+        <a href="Cos_cumparaturi.html">
+            <img alt="Cart" src="images/cart.png" id="img2">
+            <img alt="Cart" src="images/cart_hov.png" id="img2_hov">
+        </a>
+    </div>
+</div>
+<div class="meniu">
+    <div><a href="Pizza.html" >Pizza</a></div>
+    <div><a href="Paste.html">Paste</a></div>
+    <div><a href="Pui.html">Preparate din pui</a></div>
+    <div><a href="Burgers.html">Burgeri</a></div>
+    <div><a href="Garnituri.html">Garnituri</a></div>
+    <div><a href="Deserturi.html">Deserturi</a></div>
+</div>
+<div class="coloana">
+    <div class="menu-items" id="a">
+        <img alt="image/capricciosa.jpg" src="images/capricciosa.jpg" >
+        <div class="detalii">
+            <div class="denumire">Pizza capricciosa</div>
+            <div class="ingrediente">mozzarella, sunca, masline, ciuperci, anghinare, sos de rosii</div>
+            <span class="pret">27</span>
+        </div>
+        <span><button class="add" onclick="addcart('a')">+</button></span>
+    </div>
+    <div class="menu-items" id="b">
+        <img alt="quatro_formaggi.jpg" src="images/quatro_formaggi.jpg">
+        <div class="detalii">
+            <div class="denumire">Pizza quatro formaggi</div>
+            <div class="ingrediente">sos de rosii, mozzarella, gorgonzola, parmezan, telemea</div>
+            <span class="pret">29</span>
+        </div>
+        <span><button class="add" onclick="addcart('b')">+</button></span>
+    </div>
+    <div class="menu-items" id="c">
+        <img alt="margherita.jpg" src="images/margherita.jpg">
+        <div class="detalii">
+            <div class="denumire">Pizza margherita</div>
+            <div class="ingrediente">sos de rosii, mozzarella, busuioc</div>
+            <span class="pret">24</span>
+        </div>
+        <span><button class="add" onclick="addcart('c')">+</button></span>
+    </div>
+    <div class="menu-items" id="d">
+        <img alt="quatro_stagioni.jpg." src="images/quatro_stagioni.jpg.">
+        <div class="detalii">
+            <div class="denumire">Pizza Quattro Stagioni</div>
+            <div class="ingrediente">sos de rosii,bacon, mozzarella, sunca, ciuperci, masline</div>
+            <span class="pret">26</span>
+        </div>
+        <span><button class="add" onclick="addcart('d')">+</button></span>
+    </div>
+    <div class="menu-items" id="e">
+        <img alt="pepperoni.jpg" src="images/pepperoni.jpg">
+        <div class="detalii">
+            <div class="denumire">Pizza Pepperoni</div>
+            <div class="ingrediente">sos de rosii, mozzarella, salam pepperoni</div>
+            <span class="pret">25</span>
+        </div>
+        <span><button class="add" onclick="addcart('e')">+</button></span>
+    </div>
+</div>
+<div class="coloana">
+    <div class="menu-items" id="f">
+        <img alt="prosciutto_funghi.jpg" src="images/prosciutto_funghi.jpg">
+        <div class="detalii">
+            <div class="denumire">Pizza prosciutto e funghi</div>
+            <div class="ingrediente">sos de rosii, mozzarella, prosciutto, ciuperci</div>
+            <span class="pret">27</span>
+        </div>
+        <span><button class="add" onclick="addcart('f')">+</button></span>
+    </div>
+    <div class="menu-items" id="g">
+        <img alt="tonno.jpg" src="images/tonno.jpg">
+        <div class="detalii">
+            <div class="denumire">Pizza al tonno</div>
+            <div class="ingrediente">sos de rosii, mozzarella, ton</div>
+            <span class="pret">26</span>
+        </div>
+        <span><button class="add" onclick="addcart('g')">+</button></span>
+    </div>
+    <div class="menu-items" id="h">
+        <img alt="diavola.jpg" src="images/diavola.jpg">
+        <div class="detalii">
+            <div class="denumire">Pizza diavola</div>
+            <div class="ingrediente">sos de rosii, mozarella, salam picant, ardei iuti</div>
+            <span class="pret">26</span>
+        </div>
+        <span><button class="add" onclick="addcart('h')">+</button></span>
+    </div>
+    <div class="menu-items" id="i">
+        <img alt="pizza_carbonara.jpg" src="images/pizza_carbonara.jpg">
+        <div class="detalii">
+            <div class="denumire">Pizza carbonara</div>
+            <div class="ingrediente">sos de rosii, mozarella, sunca,ciuperci, ou</div>
+            <span class="pret">27</span>
+        </div>
+        <span><button class="add" onclick="addcart('i')">+</button></span>
+    </div>
+    <div class="menu-items" id="j">
+        <img alt="calzone.jpg" src="images/calzone.jpg">
+        <div class="detalii">
+            <div class="denumire">Pizza calzone</div>
+            <div class="ingrediente">sos de rosii, mozzarella, parmezan, sunca, ciuperci</div>
+            <span class="pret">26</span>
+        </div>
+        <span><button class="add" onclick="addcart('j')">+</button></span>
+    </div>
+</div>
+
+</body>
+</html>

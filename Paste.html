@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paste</title>
+    <link rel="stylesheet" type="text/css" href="Liste.css">
+    <link rel="stylesheet" type="text/css" href="Meniu.css">
+    <script src="order.js"></script>
+</head>
+<body >
+<div class="flex-container">
+    <span><a href="Home.html">Home</a></span>
+    <div class="dropdown">
+        <a class="drop">Meniu</a>
+        <div class="dropdown-content">
+            <a href="Pizza.html">Meniu mancare</a>
+            <a href="Alcoolice.html">Meniu bauturi</a>
+        </div>
+    </div>
+    <span><a href="Contact.html">Contact</a></span>
+    <div>
+        <img  alt="Cont" src="images/account.png" id="img1">
+        <img alt="Cont" src="images/account_hov.png" id="img1_hov">
+    </div>
+    <div>
+        <a href="Cos_cumparaturi.html">
+            <img alt="Cart" src="images/cart.png" id="img2">
+            <img alt="Cart" src="images/cart_hov.png" id="img2_hov">
+        </a>
+    </div>
+</div>
+<div class="meniu">
+    <div><a href="Pizza.html" >Pizza</a></div>
+    <div><a href="Paste.html">Paste</a></div>
+    <div><a href="Pui.html">Preparate din pui</a></div>
+    <div><a href="Burgers.html">Burgeri</a></div>
+    <div><a href="Garnituri.html">Garnituri</a></div>
+    <div><a href="Deserturi.html">Deserturi</a></div>
+</div>
+<div class="coloana">
+    <div class="menu-items" id="a">
+        <img alt="image/arrabiata.jpg" src="images/arrabiata.jpg" >
+        <div class="detalii">
+            <div class="denumire">Penne arrabiata</div>
+            <div class="ingrediente">penne, ciuperci, rosii, ardei iute, usturoi, busuioc, vin alb, verdeata, parmesan</div>
+            <div class="pret">27</div>
+        </div>
+        <span><button class="add" onclick="addcart('a')">+</button></span>
+    </div>
+    <div class="menu-items" id="b">
+        <img alt="spaghetti_carbonara.jpg" src="images/spaghetti_carbonara.jpg">
+        <div class="detalii">
+            <div class="denumire">Spaghete carbonara</div>
+            <div class="ingrediente">bacon, smantana, cascaval, parmesan</div>
+            <div class="pret">28</div>
+        </div>
+        <span><button class="add" onclick="addcart('b')">+</button></span>
+    </div>
+    <div class="menu-items" id="c">
+        <img alt="bolognese.jpg" src="images/bolognese.jpg">
+        <div class="detalii">
+            <div class="denumire">Penne bolognese</div>
+            <div class="ingrediente">penne, ceapa, vita, vin alb, sos de rosii, busuioc</div>
+            <div class="pret">26</div>
+        </div>
+        <span><button class="add" onclick="addcart('c')">+</button></span>
+    </div>
+</div>
+<div class="coloana">
+    <div class="menu-items" id="d">
+        <img alt="siciliene.jpg" src="images/siciliene.jpg">
+        <div class="detalii">
+            <div class="denumire">Penne Siciliene</div>
+            <div class="ingrediente">pene, sunca, mozzarella, smanatana, ciuperci, masline, busuioc, sos de rosii, parmesan</div>
+            <div class="pret">29</div>
+        </div>
+        <span><button class="add" onclick="addcart('d')">+</button></span>
+    </div>
+    <div class="menu-items" id="e">
+        <img alt="aglio-olio.jpg" src="images/aglio_olio.jpg">
+        <div class="detalii">
+            <div class="denumire">Spaghete aglio e olio</div>
+            <div class="ingrediente">spaghete, ulei de masline, usturoi, ardei uscat</div>
+            <div class="pret">25</div>
+        </div>
+        <span><button class="add" onclick="addcart('e')">+</button></span>
+    </div>
+    <div class="menu-items" id="f">
+        <img alt="pasta_quatro_formaggi.jpg" src="images/pasta_quattro_formaggi.jpg">
+        <div class="detalii">
+            <div class="denumire">Penne quattro formaggi</div>
+            <div class="ingrediente">pene, gorgonzola, telemea, mozzarella, cascaval</div>
+            <div class="pret">29</div>
+        </div>
+        <span><button class="add" onclick="addcart('f')">+</button></span>
+    </div>
+</div>
+</body>
+</html>

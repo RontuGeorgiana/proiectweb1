@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bauturi calde</title>
+    <link rel="stylesheet" type="text/css" href="Liste.css">
+    <link rel="stylesheet" type="text/css" href="Meniu.css">
+    <script src="order.js"></script>
+</head>
+<body>
+<div class="flex-container">
+    <span><a href="Home.html">Home</a></span>
+    <div class="dropdown">
+        <a class="drop">Meniu</a>
+        <div class="dropdown-content">
+            <a href="Pizza.html">Meniu mancare</a>
+            <a href="Alcoolice.html">Meniu bauturi</a>
+        </div>
+    </div>
+    <span><a href="Contact.html">Contact</a></span>
+    <div>
+        <img  alt="Cont" src="images/account.png" id="img1">
+        <img alt="Cont" src="images/account_hov.png" id="img1_hov">
+    </div>
+    <div>
+        <a href="Cos_cumparaturi.html">
+            <img alt="Cart" src="images/cart.png" id="img2">
+            <img alt="Cart" src="images/cart_hov.png" id="img2_hov">
+        </a>
+    </div>
+</div>
+<div class="meniu">
+    <div><a href="Alcoolice.html">Alcoolice</a></div>
+    <div><a href="Racoritoare.html">Racoritoare</a></div>
+    <div><a href="Bauturi_calde.html">Bauturi calde</a></div>
+</div>
+<div class="coloana">
+    <div class="menu-items" id="a">
+        <img alt="cafea.jpg" src="images/cafea.jpg" >
+        <div class="detalii">
+            <div class="denumire">Cafea</div>
+            <div class="ingrediente">espresso, americano</div>
+            <div class="pret">6</div>
+        </div>
+        <span><button class="add" onclick="addcart('a')">+</button></span>
+    </div>
+    <div class="menu-items" id="b">
+        <img alt="ceai.jpg" src="images/ceai.jpg">
+        <div class="detalii">
+            <div class="denumire">Ceai</div>
+            <div class="ingrediente">fructe, menta,  negru, alb, rooibos</div>
+            <div class="pret">5</div>
+        </div>
+        <span><button class="add" onclick="addcart('b')">+</button></span>
+    </div>
+</div>
+<div class="coloana">
+    <div class="menu-items" id="c">
+        <img alt="cappuccino.jpeg" src="images/cappuccino.jpeg">
+        <div class="detalii">
+            <div class="denumire">Cafea cu lapte</div>
+            <div class="ingrediente">cappuccino, latte</div>
+            <div class="pret">7</div>
+        </div>
+        <span><button class="add" onclick="addcart('c')">+</button></span>
+    </div>
+    <div class="menu-items" id="d">
+        <img alt="ciocolata.jpg." src="images/ciocolata.jpg">
+        <div class="detalii">
+            <div class="denumire">Ciocolata calda</div>
+            <div class="ingrediente"></div>
+            <div class="pret">6</div>
+        </div>
+        <span><button class="add" onclick="addcart('d')">+</button></span>
+    </div>
+</div>
+</body>
+</html>

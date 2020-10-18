@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Garnituri</title>
+    <link rel="stylesheet" type="text/css" href="Liste.css">
+    <link rel="stylesheet" type="text/css" href="Meniu.css">
+    <script src="order.js"></script>
+</head>
+<body >
+<div class="flex-container">
+    <span><a href="Home.html">Home</a></span>
+    <div class="dropdown">
+        <a class="drop">Meniu</a>
+        <div class="dropdown-content">
+            <a href="Pizza.html">Meniu mancare</a>
+            <a href="Alcoolice.html">Meniu bauturi</a>
+        </div>
+    </div>
+    <span><a href="Contact.html">Contact</a></span>
+    <div>
+        <img  alt="Cont" src="images/account.png" id="img1">
+        <img alt="Cont" src="images/account_hov.png" id="img1_hov">
+    </div>
+    <div>
+        <a href="Cos_cumparaturi.html">
+            <img alt="Cart" src="images/cart.png" id="img2">
+            <img alt="Cart" src="images/cart_hov.png" id="img2_hov">
+        </a>
+    </div>
+</div>
+<div class="meniu">
+    <div><a href="Pizza.html" >Pizza</a></div>
+    <div><a href="Paste.html">Paste</a></div>
+    <div><a href="Pui.html">Preparate din pui</a></div>
+    <div><a href="Burgers.html">Burgeri</a></div>
+    <div><a href="Garnituri.html">Garnituri</a></div>
+    <div><a href="Deserturi.html">Deserturi</a></div>
+</div>
+<div class="coloana">
+    <div class="menu-items" id="a">
+        <img alt="orez.jpg" src="images/orez.jpg" >
+        <div class="detalii">
+            <div class="denumire">Orez</div>
+            <div class="ingrediente"></div>
+            <div class="pret">10</div>
+        </div>
+        <span><button class="add" onclick="addcart('a')">+</button></span>
+    </div>
+    <div class="menu-items" id="b">
+        <img alt="orez_legume.jpg" src="images/orez_legume.jpg">
+        <div class="detalii">
+            <div class="denumire">Orez cu legume</div>
+            <div class="ingrediente">orez, mazare, morcov, porumb, ceapa</div>
+            <div class="pret">13</div>
+        </div>
+        <span><button class="add" onclick="addcart('b')">+</button></span>
+    </div>
+    <div class="menu-items" id="c">
+        <img alt="legume.jpg" src="images/legume.jpg">
+        <div class="detalii">
+            <div class="denumire">Legume la gratar</div>
+            <div class="ingrediente">vanata, dovleac, ardei, asparagus, ciuperci</div>
+            <div class="pret">14</div>
+        </div>
+        <span><button class="add" onclick="addcart('c')">+</button></span>
+    </div>
+    <div class="menu-items" id="d">
+        <img alt="cartofi_prajiti.jpg." src="images/cartofi_prajiti.jpg">
+        <div class="detalii">
+            <div class="denumire">Cartofi prajiti</div>
+            <div class="ingrediente"></div>
+            <div class="pret">10</div>
+        </div>
+        <span><button class="add" onclick="addcart('d')">+</button></span>
+    </div>
+</div>
+<div class="coloana">
+    <div class="menu-items" id="e">
+        <img alt="piure.jpg" src="images/piure.jpg">
+        <div class="detalii">
+            <div class="denumire">Piure de cartofi</div>
+            <div class="ingrediente"></div>
+            <div class="pret">11</div>
+        </div>
+        <span><button class="add" onclick="addcart('e')">+</button></span>
+    </div>
+    <div class="menu-items" id="f">
+        <img alt="cartofi_natur.jpg" src="images/cartofi_natur.jpg">
+        <div class="detalii">
+            <div class="denumire">Cartofi natur</div>
+            <div class="ingrediente">cartofi, patrunjel, unt</div>
+            <div class="pret">11</div>
+        </div>
+        <span><button class="add" onclick="addcart('f')">+</button></span>
+    </div>
+    <div class="menu-items" id="g">
+        <img alt="wedges.jpg" src="images/wedges.jpg">
+        <div class="detalii">
+            <div class="denumire">Cartofi wedges</div>
+            <div class="ingrediente"></div>
+            <div class="pret">11</div>
+        </div>
+        <span><button class="add" onclick="addcart('g')">+</button></span>
+    </div>
+    <div class="menu-items" id="h">
+        <img alt="mamaliga.jpg" src="images/mamaliga.jpg">
+        <div class="detalii">
+            <div class="denumire">Mamaliga</div>
+            <div class="ingrediente"></div>
+            <div class="pret">9</div>
+        </div>
+        <span><button class="add" onclick="addcart('h')">+</button></span>
+    </div>
+</div>
+</body>
+</html>

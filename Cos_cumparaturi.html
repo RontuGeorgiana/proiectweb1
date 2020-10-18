@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cos de cumparaturi</title>
+    <link rel="stylesheet" type="text/css" href="Cos_cumparaturi.css">
+    <script src="cos.js"></script>
+</head>
+<body onload="onLoadHandler()">
+<div class="flex-container">
+    <span><a href="Home.html">Home</a></span>
+    <div class="dropdown">
+        <a class="drop">Meniu</a>
+        <div class="dropdown-content">
+            <a href="Pizza.html">Meniu mancare</a>
+            <a href="Alcoolice.html">Meniu bauturi</a>
+        </div>
+    </div>
+    <span><a href="Contact.html">Contact</a></span>
+    <div>
+        <img  alt="Cont" src="images/account.png" id="img1">
+        <img alt="Cont" src="images/account_hov.png" id="img1_hov">
+    </div>
+    <div>
+        <a href="Cos_cumparaturi.html">
+            <img alt="Cart" src="images/cart.png" id="img2">
+            <img alt="Cart" src="images/cart_hov.png" id="img2_hov">
+        </a>
+    </div>
+</div>
+<div id="lista"></div>
+<div  class="total" id="total_prod"></div>
+<div  class="total" id="livrare"></div>
+<div  class="total" id="total"></div>
+<div id="formular">
+    <form onsubmit="comanda()">
+        <div class="prim-col">
+            <label for="nume">Nume</label>
+            <input type="text" id="nume" name="nume">
+        </div>
+        <div class="doua-col">
+            <label for="prenume">Prenume</label>
+            <input type="text" id="prenume" name="prenume">
+        </div>
+        <label for="adr" class="prim-col">Adresa</label>
+        <input type="text" id="adr" name="adr">
+        <div class="prim-col">
+            <label for="tel">Nr de telefon</label>
+            <input type="text" id="tel" name="tel">
+        </div>
+        <div class="doua-col">
+            <label for="mail">Adresa de email</label>
+            <input type="text" id="mail" name="mail">
+        </div>
+        <label for="det" class="prim-col">Detalii suplimentare</label>
+        <input type="text" id="det" name="det"><br>
+        <input type="radio" id="pliv" name="plata" value="livrare">
+        <label for="pliv">Plata livrare</label><br>
+        <input type="radio" id="ponl" name="plata" value="online">
+        <label for="ponl">Plata online</label>
+        <input type="submit" value="Comanda">
+    </form>
+</div>
+</body>
+</html>

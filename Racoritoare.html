@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Racoritoare</title>
+    <link rel="stylesheet" type="text/css" href="Liste.css">
+    <link rel="stylesheet" type="text/css" href="Meniu.css">
+    <script src="order.js"></script>
+</head>
+<body>
+<div class="flex-container">
+    <span><a href="Home.html">Home</a></span>
+    <div class="dropdown">
+        <a class="drop">Meniu</a>
+        <div class="dropdown-content">
+            <a href="Pizza.html">Meniu mancare</a>
+            <a href="Alcoolice.html">Meniu bauturi</a>
+        </div>
+    </div>
+    <span><a href="Contact.html">Contact</a></span>
+    <div>
+        <img  alt="Cont" src="images/account.png" id="img1">
+        <img alt="Cont" src="images/account_hov.png" id="img1_hov">
+    </div>
+    <div>
+        <a href="Cos_cumparaturi.html">
+            <img alt="Cart" src="images/cart.png" id="img2">
+            <img alt="Cart" src="images/cart_hov.png" id="img2_hov">
+        </a>
+    </div>
+</div>
+<div class="meniu">
+    <div><a href="Alcoolice.html">Alcoolice</a></div>
+    <div><a href="Racoritoare.html">Racoritoare</a></div>
+    <div><a href="Bauturi_calde.html">Bauturi calde</a></div>
+</div>
+<div class="coloana">
+    <div class="menu-items" id="a">
+        <img alt="apa_plata.jpg" src="images/apa_plata.jpg" >
+        <div class="detalii">
+            <div class="denumire">Apa plata</div>
+            <div class="ingrediente"></div>
+            <div class="pret">5</div>
+        </div>
+        <span><button class="add" onclick="addcart('a')">+</button></span>
+    </div>
+    <div class="menu-items" id="b">
+        <img alt="apa_carbogazoasa.jpg" src="images/apa_carbogazoasa.jpg">
+        <div class="detalii">
+            <div class="denumire">Apa minerala</div>
+            <div class="ingrediente"></div>
+            <div class="pret">5</div>
+        </div>
+        <span><button class="add" onclick="addcart('b')">+</button></span>
+    </div>
+    <div class="menu-items" id="c">
+        <img alt="cola.jpeg" src="images/cola.jpg">
+        <div class="detalii">
+            <div class="denumire">Coca cola</div>
+            <div class="ingrediente"></div>
+            <div class="pret">6</div>
+        </div>
+        <span><button class="add" onclick="addcart('c')">+</button></span>
+    </div>
+    <div class="menu-items" id="d">
+        <img alt="sprite.jpg." src="images/sprite.jpg">
+        <div class="detalii">
+            <div class="denumire">Sprite</div>
+            <div class="ingrediente"></div>
+            <div class="pret">6</div>
+        </div>
+        <span><button class="add" onclick="addcart('d')">+</button></span>
+    </div>
+</div>
+<div class="coloana">
+    <div class="menu-items" id="e">
+        <img alt="fanta.jpg" src="images/fanta.jpg">
+        <div class="detalii">
+            <div class="denumire">Fanta</div>
+            <div class="ingrediente"></div>
+            <div class="pret">6</div>
+        </div>
+        <span><button class="add" onclick="addcart('e')">+</button></span>
+    </div>
+    <div class="menu-items" id="f">
+        <img alt="lipton.jpg" src="images/lipton.jpg">
+        <div class="detalii">
+            <div class="denumire">Lipton</div>
+            <div class="ingrediente"></div>
+            <div class="pret">6</div>
+        </div>
+        <span><button class="add" onclick="addcart('f')">+</button></span>
+    </div>
+    <div class="menu-items" id="g">
+        <img alt="prigat.jpg" src="images/prigat.jpg">
+        <div class="detalii">
+            <div class="denumire">Prigat</div>
+            <div class="ingrediente"></div>
+            <div class="pret">6</div>
+        </div>
+        <span><button class="add" onclick="addcart('g')">+</button></span>
+    </div>
+    <div class="menu-items" id="h">
+        <img alt="schweppes.jpg" src="images/schweppes.jpg">
+        <div class="detalii">
+            <div class="denumire">Schweppes</div>
+            <div class="ingrediente"></div>
+            <div class="pret">7</div>
+        </div>
+        <span><button class="add" onclick="addcart('h')">+</button></span>
+    </div>
+</div>
+</body>
+</html>

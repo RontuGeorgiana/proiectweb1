@@ -1,0 +1,350 @@
+body {
+    background-color: #ceb38d;
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+::-webkit-scrollbar-track{
+    background: #ceb38d;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #a58767;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #94785F;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #a58767;
+    position: relative;
+    border-radius: 30px;
+}
+.flex-container > span {
+    text-align: center;
+    width: 50px;
+    margin: 15px;
+    position: relative;
+    left: 90px;
+    color: #DFD6A3;
+    font-size: 21px;
+    font-weight: bolder;
+}
+
+.drop {
+    color: #DFD6A3;
+    text-align: center;
+    font-size: 21px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropdown {
+    text-align: center;
+    width: 50px;
+    margin: 15px;
+    position: relative;
+    left: 90px;
+    color: #DFD6A3;
+    font-size: 21px;
+    font-weight: bolder;
+    display: inline;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: -100%;
+    background-color: #a58767;
+    min-width: 160px;
+    /*box-shadow: 0px 8px 16px 0px #94785F;*/
+    z-index: 1;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.dropdown-content a {
+    color: #DFD6A3;
+    padding: 6px 8px;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: #feffb7;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .drop{
+    color: #feffb7;
+}
+
+#img1 {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    position: absolute;
+    right: 140px;
+    margin-right: 10px;
+}
+
+#img1_hov {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    position: absolute;
+    right: 140px;
+    margin-right: 10px;
+    display: none;
+}
+
+.flex-container > div:hover #img1_hov {
+    display: inline-block;
+}
+
+#img2 {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    position: absolute;
+    right: 100px;
+    margin-left: 10px;
+}
+
+#img2_hov {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    position: absolute;
+    right: 100px;
+    margin-left: 10px;
+    display: none;
+}
+
+.flex-container > div:hover #img2_hov{
+    display: inline-block;
+}
+
+.flex-container > img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    position: absolute;
+    right: 400px;
+}
+
+.flex-container > span > a:link{
+    color: #DFD6A3;
+    text-decoration: none;
+}
+
+.flex-container > span > a:visited{
+    color: #DFD6A3;
+    text-decoration: none;
+}
+
+.flex-container > span > a:hover{
+    color: #feffb7;
+}
+
+#lista{
+    width: 90%;
+    float: left;
+    padding: 10px;
+}
+
+#lista > div{
+    max-height: 330px;
+    width: 100%;
+    float: left;
+    position: relative;
+    margin: auto;
+    top: 5px;
+}
+
+#lista > div > img{
+    max-height: 300px;
+    max-width: 400px;
+    width: 50%;
+    float: top;
+    position: relative;
+    margin: auto;
+    left: 10%;
+    top: 5px;
+    display: inline;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+#lista > div > div{
+    position: absolute;
+    max-width: 50%;
+    margin: auto;
+    display: inline-block;
+    top: 120px;
+    left: 50%;
+}
+
+#lista > div > div > span{
+    max-width: 100%;
+    display:block;
+    position: relative;
+    padding: 10px;
+    padding-left: 5px;
+    float: top;
+    bottom: 100px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: saddlebrown;
+
+}
+
+.total {
+    position: relative;
+    display: block;
+    padding: 10px;
+    left: 30%;
+    font-size: 22px;
+    font-weight: bold;
+    color: #713814;
+    float: left;
+
+}
+
+#formular {
+    position: relative;
+    display: block;
+    padding: 10px;
+    left:15%;
+    float: left;
+    background-color: #bfa27b;
+    border-radius: 15px;
+    padding: 20px;
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.prim-col{
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+
+.doua-col
+{
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+
+label {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: bold;
+    color: #6D3613;
+    display: inline-block;
+}
+
+input[type=text] {
+    background-color: #ceb38d;
+    border-radius: 5px;
+    border-bottom-width: 1px;
+    border-bottom-color: #a58767;
+    border-top-width: 2px;
+    border-top-color: #81654F;
+    border-left-width: 2px;
+    border-left-color: #81654F;
+    border-right-width: 1px;
+    border-right-color: #a58767;
+    border-top-style: solid;
+    border-left-style: solid;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #632C17;
+    width: 90%;
+    margin-bottom: 8px;
+}
+
+input[type=text]:focus {
+    outline: none;
+    border: 2px solid #7f634d;
+}
+
+#formular > form > input[type=submit] {
+    background-color: #B39472;
+    border-radius: 5px;
+    border-bottom-width: 2px;
+    border-bottom-color: #81654F;
+    border-top-width: 1px;
+    border-top-color: #81654F;
+    border-left-width: 1px;
+    border-left-color: #81654F;
+    border-right-width: 2px;
+    border-right-color: #81654F;
+    border-top-style: solid;
+    border-left-style: solid;
+    color: #632C17;
+    font-weight: bold;
+    display: block;
+}
+
+#formular > form > input[type=submit]:hover {
+    background-color: #a58767;
+}
+
+#det {
+    padding-bottom: 20px;
+    width: 95%;
+}
+
+#adr{
+    width: 95%;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    #lista > div >img { max-width: 300px; max-height: 350px;}
+    #lista > div > div{ left: 44%;}
+}
+
+@media only screen and (max-width: 1050px) {
+    #lista > div >img { max-width: 250px; max-height: 300px;}
+    #lista > div > div{ left: 42%;}
+}
+
+@media only screen and (max-width: 970px) {
+    #lista > div >img { max-width: 250px; max-height: 300px;}
+    #lista > div > div{ left: 46%;}
+}
+
+@media only screen and (max-width: 830px) {
+    #lista > div >img { max-width: 250px; max-height: 300px;}
+    #lista > div > div{ left: 50%;}
+}
+
+@media only screen and (max-width: 750px) {
+    #lista > div >img { max-width: 250px; max-height: 300px;}
+    #lista > div > div{ left: 55%;}
+    #lista > div > div > span {font-size: 17px;}
+}
+
+@media only screen and (max-width: 700px) {
+    #lista > div >img { max-width: 230px; max-height: 300px;}
+    #lista > div > div{ left: 56%;}
+    #lista > div > div > span {font-size: 17px;}
+}

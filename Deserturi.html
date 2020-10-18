@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Deserturi</title>
+    <link rel="stylesheet" type="text/css" href="Liste.css">
+    <link rel="stylesheet" type="text/css" href="Meniu.css">
+    <script src="order.js"></script>
+</head>
+<body >
+<div class="flex-container">
+    <span><a href="Home.html">Home</a></span>
+    <div class="dropdown">
+        <a class="drop">Meniu</a>
+        <div class="dropdown-content">
+            <a href="Pizza.html">Meniu mancare</a>
+            <a href="Alcoolice.html">Meniu bauturi</a>
+        </div>
+    </div>
+    <span><a href="Contact.html">Contact</a></span>
+    <div>
+        <img  alt="Cont" src="images/account.png" id="img1">
+        <img alt="Cont" src="images/account_hov.png" id="img1_hov">
+    </div>
+    <div>
+        <a href="Cos_cumparaturi.html">
+            <img alt="Cart" src="images/cart.png" id="img2">
+            <img alt="Cart" src="images/cart_hov.png" id="img2_hov">
+        </a>
+    </div>
+</div>
+<div class="meniu">
+    <div><a href="Pizza.html" >Pizza</a></div>
+    <div><a href="Paste.html">Paste</a></div>
+    <div><a href="Pui.html">Preparate din pui</a></div>
+    <div><a href="Burgers.html">Burgeri</a></div>
+    <div><a href="Garnituri.html">Garnituri</a></div>
+    <div><a href="Deserturi.html">Deserturi</a></div>
+</div>
+<div class="coloana">
+    <div class="menu-items" id="a">
+        <img alt="tiramisu.jpg" src="images/tiramisu.jpg" >
+        <div class="detalii">
+            <div class="denumire">Tiramisu</div>
+            <div class="ingrediente"></div>
+            <div class="pret">17</div>
+        </div>
+        <span><button class="add" onclick="addcart('a')">+</button></span>
+    </div>
+    <div class="menu-items" id="b">
+        <img alt="clatite.jpg" src="images/clatite.jpg">
+        <div class="detalii">
+            <div class="denumire">Clatite</div>
+            <div class="ingrediente">nutella, dulceata de capsuni, dulceata de fructe de padure, dulceata de trandafiri</div>
+            <div class="pret">16</div>
+        </div>
+        <span><button class="add" onclick="addcart('b')">+</button></span>
+    </div>
+    <div class="menu-items" id="c">
+        <img alt="cheesecake.jpg" src="images/cheesecake.jpg">
+        <div class="detalii">
+            <div class="denumire">Cheesecake</div>
+            <div class="ingrediente">dulceata de cirrese, dulceata de fructe de padure, dulceata de capsuni</div>
+            <div class="pret">17</div>
+        </div>
+        <span><button class="add" onclick="addcart('c')">+</button></span>
+    </div>
+</div>
+<div class="coloana">
+    <div class="menu-items" id="d">
+        <img alt="cremsnit.jpg" src="images/cremsnit.jpg">
+        <div class="detalii">
+            <div class="denumire">Cremsnit</div>
+            <div class="ingrediente"></div>
+            <div class="pret">15</div>
+        </div>
+        <span><button class="add" onclick="addcart('d')">+</button></span>
+    </div>
+    <div class="menu-items" id="e">
+        <img alt="papanasi.jpg" src="images/papanasi.jpg">
+        <div class="detalii">
+            <div class="denumire">Papanasi</div>
+            <div class="ingrediente">dulceata de cirrese, dulceata de fructe de padure, dulceata de capsuni</div>
+            <div class="pret">19</div>
+        </div>
+        <span><button class="add" onclick="addcart('e')">+</button></span>
+    </div>
+    <div class="menu-items" id="f">
+        <img alt="inghetata.jpg" src="images/inghetata.jpg">
+        <div class="detalii">
+            <div class="denumire">Inghetata</div>
+            <div class="ingrediente"></div>
+            <div class="pret">17</div>
+        </div>
+        <span><button class="add" onclick="addcart('f')">+</button></span>
+    </div>
+</div>
+</body>
+</html>

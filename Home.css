@@ -1,0 +1,227 @@
+body {
+    background-color: #ceb38d;
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+::-webkit-scrollbar-track{
+    background: #ceb38d;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #a58767;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #94785F;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #a58767;
+    position: relative;
+    border-radius: 30px;
+}
+.flex-container > span {
+    text-align: center;
+    width: 50px;
+    margin: 15px;
+    position: relative;
+    left: 90px;
+    color: #DFD6A3;
+    font-size: 21px;
+    font-weight: bolder;
+}
+
+.drop {
+    color: #DFD6A3;
+    text-align: center;
+    font-size: 21px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    text-align: center;
+    width: 50px;
+    margin: 15px;
+    position: relative;
+    left: 90px;
+    color: #DFD6A3;
+    font-size: 21px;
+    font-weight: bolder;
+    display: inline;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: -100%;
+    background-color: #a58767;
+    min-width: 160px;
+    /*box-shadow: 0px 8px 16px 0px #94785F;*/
+    z-index: 1;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.dropdown-content a {
+    color: #DFD6A3;
+    padding: 6px 8px;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: #feffb7;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .drop{
+    color: #feffb7;
+}
+
+#img1 {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    position: absolute;
+    right: 140px;
+    margin-right: 10px;
+}
+
+#img1_hov {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    position: absolute;
+    right: 140px;
+    margin-right: 10px;
+    display: none;
+}
+
+.flex-container > div:hover #img1_hov {
+    display: inline-block;
+}
+
+#img2 {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    position: absolute;
+    right: 100px;
+    margin-left: 10px;
+}
+
+#img2_hov {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    position: absolute;
+    right: 100px;
+    margin-left: 10px;
+    display: none;
+}
+
+.flex-container > div:hover #img2_hov{
+    display: inline-block;
+}
+
+.flex-container > img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    position: absolute;
+    right: 400px;
+}
+
+.flex-container > span > a:link{
+    color: #DFD6A3;
+    text-decoration: none;
+}
+
+.flex-container > span > a:visited{
+    color: #DFD6A3;
+    text-decoration: none;
+}
+
+.flex-container > span > a:hover{
+    color: #feffb7;
+}
+
+
+
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+img {
+    vertical-align: middle;
+    height: 500px;
+    width: 800px;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    top: 60px;
+}
+.text {
+    color: rgba(223, 214, 163, 0.85);
+    font-size: 25px;
+    padding: 8px 12px;
+    position: relative;
+    bottom: 0px;
+    text-align: center;
+    font-weight: bolder;
+    background-color: #a58767;
+
+}
+
+.numbertext {
+    color: #dfd6a3;
+    font-size: 16px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    font-weight: bolder;
+    background-color: #a58767;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #a58767;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: rgba(123, 92, 64, 0.87);
+}
+
+.slider {
+    -webkit-animation-name: slider;
+    -webkit-animation-duration: 1.5s;
+    animation-name: slider;
+    animation-duration: 1.5s;
+}
+
+@keyframes slider {
+    from {opacity: .55; transform: translateX(15%); }
+    to {opacity: 1; transform: translateX(0%);}
+}
+
+@media only screen and (max-width: 600px) {
+    .text {font-size: 14px}
+    .numbertext {font-size: 14px;}
+    @keyframes slider {from {opacity: .55;} to {opacity: 1;}}
+}

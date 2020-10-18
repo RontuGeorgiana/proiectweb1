@@ -1,0 +1,122 @@
+body {
+    background-color: #ceb38d;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track{
+    background: #ceb38d;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #a58767;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #94785F;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.coloana {
+    width: 40%;
+    float:left;
+    padding: 10px;
+}
+
+.menu-items {
+    top: 20px;
+    width:100%;
+    max-height:250px;
+    float: top;
+    position: relative;
+    margin: auto;
+    padding-bottom: 10%;
+
+}
+
+.menu-items > img {
+    position: relative;
+    max-width: 300px;
+    max-height: 200px;
+    margin: auto;
+    left: 0px;
+    top: 10px;
+    width:50%;
+
+}
+
+.menu-items > div {
+    position: absolute;
+    max-width: 50%;
+    margin: auto;
+    display: inline-block;
+    top: 5%;
+}
+
+.detalii > div {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    padding-bottom: 8%;
+    left: 0px;
+}
+
+.denumire {
+    font-size: 20px;
+    font-weight: bold;
+    color: saddlebrown;
+    padding: 5px;
+}
+
+.ingrediente {
+    font-size: 15px;
+    font-weight: lighter;
+    color: saddlebrown;
+    padding: 3px;
+    padding-left: 5px;
+}
+
+.pret {
+    font-size: 17px;
+    color: saddlebrown;
+    padding: 5px;
+}
+
+.add{
+    border: none;
+    background-color: #a58767;
+    border-radius: 12px;
+    padding: 1px 6px;
+    color: #DFD6A3;
+    display: block;
+    position: absolute;
+    font-size: 20px;
+    font-weight: bolder;
+    left: 95%;
+    top: 70%;
+}
+
+.add:hover {
+    color: #feffb7;
+    background-color: #94785F;
+}
+
+
+@media only screen and (max-width: 970px) {
+    .denumire {font-size: 17px; }
+    .ingrediente {font-size: 14px;}
+    .pret {font-size: 15px;}
+    .menu-items > img {max-width: 50%;}
+    .detalii > div {padding-bottom: 0%;}
+}
+@media only screen and (max-width: 600px) {
+    .denumire {font-size: 15px;}
+    .ingrediente {display: none;}
+    .pret {font-size: 12px;}
+}

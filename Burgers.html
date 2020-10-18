@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Burgers</title>
+    <link rel="stylesheet" type="text/css" href="Liste.css">
+    <link rel="stylesheet" type="text/css" href="Meniu.css">
+    <script src="order.js"></script>
+</head>
+<body>
+<div class="flex-container">
+    <span><a href="Home.html">Home</a></span>
+    <div class="dropdown">
+        <a class="drop">Meniu</a>
+        <div class="dropdown-content">
+            <a href="Pizza.html">Meniu mancare</a>
+            <a href="Alcoolice.html">Meniu bauturi</a>
+        </div>
+    </div>
+    <span><a href="Contact.html">Contact</a></span>
+    <div>
+        <img  alt="Cont" src="images/account.png" id="img1">
+        <img alt="Cont" src="images/account_hov.png" id="img1_hov">
+    </div>
+    <div>
+        <a href="Cos_cumparaturi.html">
+            <img alt="Cart" src="images/cart.png" id="img2">
+            <img alt="Cart" src="images/cart_hov.png" id="img2_hov">
+        </a>
+    </div>
+</div>
+<div class="meniu">
+    <div><a href="Pizza.html" >Pizza</a></div>
+    <div><a href="Paste.html">Paste</a></div>
+    <div><a href="Pui.html">Preparate din pui</a></div>
+    <div><a href="Burgers.html">Burgeri</a></div>
+    <div><a href="Garnituri.html">Garnituri</a></div>
+    <div><a href="Deserturi.html">Deserturi</a></div>
+</div>
+<div class="coloana">
+    <div class="menu-items" id="a">
+        <img alt="hamburger.jpg" src="images/hamburger.jpg" >
+        <div class="detalii">
+            <div class="denumire">Hamburger</div>
+            <div class="ingrediente">vita, salata, ceapa, paprika, jalapeno, sos burger</div>
+            <div class="pret">25</div>
+        </div>
+        <span><button class="add" onclick="addcart('a')">+</button></span>
+    </div>
+    <div class="menu-items" id="b">
+        <img alt="burger_pui.jpg" src="images/burger_pui.jpg">
+        <div class="detalii">
+            <div class="denumire">Burger de pui</div>
+            <div class="ingrediente">pui, ceapa, rucola, maioneza</div>
+            <div class="pret">23</div>
+        </div>
+        <span><button class="add" onclick="addcart('b')">+</button></span>
+    </div>
+</div>
+<div class="coloana">
+    <div class="menu-items" id="c">
+        <img alt="cheeseburger.jpg" src="images/cheeseburger.jpg">
+        <div class="detalii">
+            <div class="denumire">Cheeseburger</div>
+            <div class="ingrediente">vita, salata, rosie, muraturi, ceapa, branza</div>
+            <div class="pret">26</div>
+        </div>
+        <span><button class="add" onclick="addcart('c')">+</button></span>
+    </div>
+    <div class="menu-items" id="d">
+        <img alt="fish-burger.jpg." src="images/fish-burger.jpg">
+        <div class="detalii">
+            <div class="denumire">Burger cu peste</div>
+            <div class="ingrediente">peste, salata, ceapa, sos tartar</div>
+            <div class="pret">25</div>
+        </div>
+        <span><button class="add" onclick="addcart('d')">+</button></span>
+    </div>
+</div>
+</body>
+</html>
